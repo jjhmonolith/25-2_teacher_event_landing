@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 그라데이션 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- 로고 -->
+  <rect x="100" y="80" width="60" height="60" rx="10" fill="#3B82F6"/>
+  <text x="180" y="120" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="#3B82F6">CODLE</text>
+  
+  <!-- 메인 타이틀 -->
+  <text x="100" y="220" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="#0f172a">교육에 진심인 선생님께</text>
+  <text x="100" y="280" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="url(#text-gradient)">드리는 초대</text>
+  
+  <!-- 서브 타이틀 -->
+  <text x="100" y="340" font-family="system-ui, sans-serif" font-size="24" fill="#475569">AIDT 변화 속에서도 수업이 흔들리지 않도록,</text>
+  <text x="100" y="380" font-family="system-ui, sans-serif" font-size="24" fill="#475569">그리고 더 빛날 수 있도록—코들이 진심으로 함께합니다.</text>
+  
+  <!-- CTA -->
+  <rect x="100" y="440" width="200" height="60" rx="30" fill="#3B82F6"/>
+  <text x="200" y="480" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="white" text-anchor="middle">선도교사 신청하기</text>
+  
+  <!-- 장식 요소 -->
+  <circle cx="900" cy="200" r="80" fill="#3B82F6" opacity="0.1"/>
+  <circle cx="900" cy="200" r="50" fill="#3B82F6" opacity="0.2"/>
+  <circle cx="900" cy="200" r="20" fill="#3B82F6" opacity="0.3"/>
+  
+  <!-- 하트 아이콘 -->
+  <path d="M900 180 C890 170, 870 170, 870 190 C870 210, 900 230, 900 230 C900 230, 930 210, 930 190 C930 170, 910 170, 900 180 Z" fill="#3B82F6"/>
+</svg>
