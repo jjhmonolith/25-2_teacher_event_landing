@@ -12,11 +12,15 @@ export default function FloatingButtons() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // 첫 페이지(히어로 섹션)를 넘어가면 표시
       const heroHeight = window.innerHeight
       const scrollY = window.scrollY
+      const documentHeight = document.documentElement.scrollHeight
+      const windowHeight = window.innerHeight
       
-      setIsVisible(scrollY > heroHeight * 0.8)
+      // CTA 섹션까지 스크롤하면 숨기기 (하단에서 800px 위까지 오면 숨김)
+      const ctaThreshold = documentHeight - windowHeight - 800
+      
+      setIsVisible(scrollY > heroHeight * 0.8 && scrollY < ctaThreshold)
     }
 
     window.addEventListener('scroll', handleScroll)

@@ -1,23 +1,20 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, GraduationCap, Calendar, Users } from 'lucide-react'
+import { Check } from 'lucide-react'
 
 const targetCriteria = [
   {
-    icon: GraduationCap,
     text: '중학교 정보교사',
-    emoji: '👨‍💻'
+    image: '/icons/target-1.png'
   },
   {
-    icon: Calendar,
     text: '2025-2학기 코스웨어 활용 계획이 있는 분',
-    emoji: '📱'
+    image: '/icons/target-2.png'
   },
   {
-    icon: Users,
     text: '동료 선생님께 사례/노하우를 나눌 수 있는 분',
-    emoji: '🌟'
+    image: '/icons/target-3.png'
   },
 ]
 
@@ -50,7 +47,6 @@ export default function Target() {
 
           <div className="space-y-6">
             {targetCriteria.map((criteria, index) => {
-              const Icon = criteria.icon
               return (
                 <motion.div
                   key={index}
@@ -70,8 +66,12 @@ export default function Target() {
                     <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     
                     <div className="flex-shrink-0 relative z-10">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center relative group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-2xl sm:text-3xl animate-bounce-soft">{criteria.emoji}</span>
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center relative group-hover:scale-110 transition-transform duration-300">
+                        <img 
+                          src={criteria.image} 
+                          alt={`${criteria.text} 아이콘`}
+                          className="w-14 h-14 sm:w-16 sm:h-16 object-contain animate-bounce-soft"
+                        />
                       </div>
                     </div>
                     

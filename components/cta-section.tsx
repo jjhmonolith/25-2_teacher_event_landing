@@ -99,11 +99,11 @@ export default function CTASection() {
               </div>
               <div className="flex items-center space-x-1">
                 <span>📝</span>
-                <span>5분 내 완료</span>
+                <span>1분 내 완료</span>
               </div>
               <div className="flex items-center space-x-1">
                 <span>💝</span>
-                <span>즉시 혜택 제공</span>
+                <span>1 대 1 케어</span>
               </div>
             </div>
           </motion.div>

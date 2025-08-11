@@ -23,7 +23,7 @@ export default function Header() {
           />
         </div>
         <Button onClick={handleCTAClick}>
-          선도교사 신청하기
+          신청하기
         </Button>
       </div>
     </header>

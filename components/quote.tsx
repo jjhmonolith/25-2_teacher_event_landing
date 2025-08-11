@@ -82,7 +82,7 @@ export default function Quote() {
             className="w-32 h-1 bg-gradient-to-r from-white/40 via-accent to-white/40 mx-auto rounded-full"
           />
           
-          {/* Floating heart */}
+          {/* Floating Codle logo */}
           <motion.div
             className="mt-8 flex justify-center"
             initial={{ opacity: 0, y: 20 }}
@@ -90,8 +90,8 @@ export default function Quote() {
             transition={{ duration: 0.8, delay: 1.4 }}
             viewport={{ once: true }}
           >
-            <div className="glass-morphism-dark w-12 h-12 rounded-full flex items-center justify-center animate-float">
-              <span className="text-accent text-xl">✨</span>
+            <div className="glass-morphism-dark w-16 h-16 rounded-full flex items-center justify-center animate-float p-3">
+              <img src="/logos/codle-white-simple.svg" alt="Codle" className="w-10 h-10" />
             </div>
           </motion.div>
         </motion.div>
