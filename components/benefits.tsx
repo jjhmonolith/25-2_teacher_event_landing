@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 const benefits = [
   {
     title: '2학기 코들 Pro 최대 99% 할인',
-    description: '학생 수 관계없이 총 10만원이면 충분합니다. 다른 선생님 초대까지 하면 50% 추가 할인.',
+    description: '학생 수 관계없이 총 10만원이면 충분합니다. 다른 선생님 추천하면 50% 추가 할인까지!',
     image: '/icons/benefit-1.png'
   },
   {

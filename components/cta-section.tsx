@@ -43,7 +43,7 @@ export default function CTASection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
             지금 신청하고
             <br />
-            <span className="text-gradient">2025-2학기 준비를 가볍게</span>
+            <span className="text-gradient">2학기 준비를 가볍게</span>
           </h2>
 
           <p className="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">
