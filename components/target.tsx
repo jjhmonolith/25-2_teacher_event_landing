@@ -61,24 +61,24 @@ export default function Target() {
                   whileHover={{ scale: 1.02, x: 10 }}
                   className="group"
                 >
-                  <div className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 glass-morphism rounded-2xl border-white/30 hover:border-primary/30 transition-all duration-500 relative overflow-hidden">
+                  <div className="flex items-center space-x-2 sm:space-x-6 p-3 sm:p-6 glass-morphism rounded-2xl border-white/30 hover:border-primary/30 transition-all duration-500 relative overflow-hidden">
                     {/* Gradient overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     
                     <div className="flex-shrink-0 relative z-10">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center relative group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center relative group-hover:scale-110 transition-transform duration-300">
                         <img 
                           src={criteria.image} 
                           alt={`${criteria.text} 아이콘`}
-                          className="w-14 h-14 sm:w-16 sm:h-16 object-contain animate-bounce-soft"
+                          className="w-12 h-12 sm:w-16 sm:h-16 object-contain animate-bounce-soft"
                         />
                       </div>
                     </div>
                     
                     <div className="flex-1 relative z-10">
-                      <div className="flex items-center space-x-3 sm:space-x-4">
-                        <Check className="h-5 w-5 sm:h-6 sm:w-6 text-green-500 flex-shrink-0 animate-pulse-soft" />
-                        <span className="text-slate-900 font-semibold text-base sm:text-lg group-hover:text-primary transition-colors duration-300">
+                      <div className="flex items-center space-x-2 sm:space-x-4">
+                        <Check className="h-4 w-4 sm:h-6 sm:w-6 text-green-500 flex-shrink-0 animate-pulse-soft" />
+                        <span className="text-slate-900 font-semibold text-[15px] sm:text-lg group-hover:text-primary transition-colors duration-300 leading-tight">
                           {criteria.text}
                         </span>
                       </div>
