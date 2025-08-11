@@ -9,11 +9,11 @@ const targetCriteria = [
     image: '/icons/target-1.png'
   },
   {
-    text: '2025-2학기 코스웨어 활용 계획이 있는 분',
+    text: '2학기 에듀테크 활용 계획이 있는 분',
     image: '/icons/target-2.png'
   },
   {
-    text: '동료 선생님께 사례/노하우를 나눌 수 있는 분',
+    text: '동료 선생님께 노하우를 나누시는 분',
     image: '/icons/target-3.png'
   },
 ]

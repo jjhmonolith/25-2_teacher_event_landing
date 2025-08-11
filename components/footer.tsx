@@ -47,9 +47,9 @@ export default function Footer() {
             </h3>
             
             <p className="text-slate-400 leading-relaxed max-w-2xl mx-auto mb-8">
-              교육에 진심인 선생님들과 함께 만들어가는 미래 교육 플랫폼입니다.
+              선생님들과 함께 만들어가는 교육의 미래
               <br />
-              혁신적인 교육 도구로 더 나은 수업 환경을 만들어갑니다.
+              역사상 가장 스마트한 교실을 만듭니다.
             </p>
             
             <div className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-6 text-slate-400">
@@ -73,9 +73,10 @@ export default function Footer() {
             className="border-t border-slate-800 pt-8"
           >
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-slate-400 text-sm">
-                © 2025 Codle. 개인정보는 타입폼을 통해 수집되며, 안내된 목적 외에는 사용하지 않습니다.
-              </p>
+              <div className="text-slate-400 text-sm">
+                <p>© 2025 (주)팀모노리스</p>
+                <p className="mt-1">개인정보는 안내된 목적 외에는 사용하지 않습니다.</p>
+              </div>
               <div className="flex items-center space-x-6 text-sm text-slate-400">
                 <span>선도교사 프로그램</span>
                 <span>·</span>

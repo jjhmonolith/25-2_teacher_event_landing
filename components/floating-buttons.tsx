@@ -17,12 +17,18 @@ export default function FloatingButtons() {
       const documentHeight = document.documentElement.scrollHeight
       const windowHeight = window.innerHeight
       
-      // CTA 섹션까지 스크롤하면 숨기기 (하단에서 800px 위까지 오면 숨김)
-      const ctaThreshold = documentHeight - windowHeight - 800
+      // CTA 섹션까지 스크롤하면 숨기기 
+      // 문서 끝에서 1200px 위까지 오면 숨김 (CTA 섹션 높이 고려)
+      const bottomOffset = scrollY + windowHeight
+      const hideThreshold = documentHeight - 1200
       
-      setIsVisible(scrollY > heroHeight * 0.8 && scrollY < ctaThreshold)
+      // 히어로 섹션을 넘어갔고, 아직 CTA 섹션에 도달하지 않았을 때만 표시
+      setIsVisible(scrollY > heroHeight * 0.8 && bottomOffset < hideThreshold)
     }
 
+    // 초기 실행
+    handleScroll()
+    
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
