@@ -13,9 +13,7 @@ export default function Hero() {
   }
 
   const handleShareClick = async () => {
-    const shareData = {
-      title: '코들 중학교 선도교사 모집',
-      text: `2025년 2학기 코들 중학교 선도교사 모집! 
+    const shareText = `2025년 2학기 코들 중학교 선도교사 모집! 
 
 📚 신청 대상:
 • 중학교 정보교사
@@ -24,7 +22,13 @@ export default function Hero() {
 
 "혼란 속에서도 교육의 흐름을 지키는 힘, 선생님 곁에 코들이 있습니다."
 
-최대 99% 할인 혜택과 다양한 지원을 받으실 수 있습니다.`,
+최대 99% 할인 혜택과 다양한 지원을 받으실 수 있습니다.
+
+👉 ${window.location.href}`
+
+    const shareData = {
+      title: '코들 중학교 선도교사 모집',
+      text: shareText,
       url: window.location.href
     }
 
@@ -34,9 +38,9 @@ export default function Hero() {
         await navigator.share(shareData)
         console.log('공유 완료')
       } else {
-        // 웹에서는 클립보드에 복사
-        await navigator.clipboard.writeText(window.location.href)
-        alert('링크가 클립보드에 복사되었습니다!')
+        // 데스크톱에서는 메시지와 URL을 함께 클립보드에 복사
+        await navigator.clipboard.writeText(shareText)
+        alert('메시지와 링크가 클립보드에 복사되었습니다!\n붙여넣기(Ctrl+V 또는 Cmd+V)하여 공유하세요.')
       }
     } catch (error) {
       // AbortError는 사용자가 공유를 취소한 경우이므로 무시
@@ -48,8 +52,8 @@ export default function Hero() {
       // 실제 오류인 경우에만 클립보드 복사로 대체
       console.log('공유 오류:', error)
       try {
-        await navigator.clipboard.writeText(window.location.href)
-        alert('링크가 클립보드에 복사되었습니다!')
+        await navigator.clipboard.writeText(shareText)
+        alert('메시지와 링크가 클립보드에 복사되었습니다!\n붙여넣기(Ctrl+V 또는 Cmd+V)하여 공유하세요.')
       } catch (clipboardError) {
         console.error('클립보드 복사 실패:', clipboardError)
         alert('공유 기능을 사용할 수 없습니다. 링크를 직접 복사해주세요: ' + window.location.href)
