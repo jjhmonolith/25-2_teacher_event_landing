@@ -21,13 +21,13 @@ export default function Footer() {
             className="text-center mb-12"
           >
             <div className="flex justify-center mb-6 space-x-6">
-              <div className="glass-morphism p-4 rounded-2xl animate-float">
+              <a href="https://codle.io" target="_blank" rel="noopener noreferrer" className="glass-morphism p-4 rounded-2xl animate-float hover:scale-105 transition-transform">
                 <img 
                   src="/logos/codle-logo-white.svg" 
                   alt="CODLE Logo" 
-                  className="h-12 w-auto"
+                  className="h-12 w-auto cursor-pointer"
                 />
-              </div>
+              </a>
               
               <div className="flex items-center">
                 <span className="text-slate-300 font-medium mx-3">by</span>

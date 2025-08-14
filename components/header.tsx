@@ -15,13 +15,13 @@ export default function Header() {
       <div className="absolute inset-0 bg-white/40 backdrop-blur-xl"></div>
       <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-primary/10 to-accent/10"></div>
       <div className="container mx-auto flex h-16 items-center justify-between px-4 relative z-10">
-        <div className="flex items-center space-x-3">
+        <a href="https://codle.io" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
           <img 
             src="/logos/codle-logo.svg" 
             alt="CODLE Logo" 
-            className="h-8 w-auto"
+            className="h-8 w-auto cursor-pointer"
           />
-        </div>
+        </a>
         <Button onClick={handleCTAClick}>
           신청하기
         </Button>

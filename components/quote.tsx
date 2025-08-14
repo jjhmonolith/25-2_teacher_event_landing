@@ -90,9 +90,9 @@ export default function Quote() {
             transition={{ duration: 0.8, delay: 1.4 }}
             viewport={{ once: true }}
           >
-            <div className="glass-morphism-dark w-16 h-16 rounded-full flex items-center justify-center animate-float p-3">
-              <img src="/logos/codle-white-simple.svg" alt="Codle" className="w-10 h-10" />
-            </div>
+            <a href="https://codle.io" target="_blank" rel="noopener noreferrer" className="glass-morphism-dark w-16 h-16 rounded-full flex items-center justify-center animate-float p-3 hover:scale-110 transition-transform">
+              <img src="/logos/codle-white-simple.svg" alt="Codle" className="w-10 h-10 cursor-pointer" />
+            </a>
           </motion.div>
         </motion.div>
         
